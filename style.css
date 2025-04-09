@@ -9,8 +9,7 @@
   width: 100%;
   min-height: 100vh;
   background-image: url(images/background_image3.png);
-  background-size: 100%;
-  background-attachment: scroll;
+  background-size: cover;
   padding: 10px;
 }
 
