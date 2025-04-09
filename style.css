@@ -8,8 +8,9 @@
 .container {
   width: 100%;
   min-height: 100vh;
-  background-image: url(images/background_image3.png);
-  background-size: cover;
+  background-image: url(images/background_image4.jpg);
+  background-size: 100%;
+  background-attachment: fixed;
   padding: 10px;
 }
 
@@ -20,6 +21,7 @@
   margin: 100px auto 20px;
   padding: 40px 30px 70px;
   border-radius: 10px;
+  opacity: 0.9;
 }
 
 .todo-app h2 {
