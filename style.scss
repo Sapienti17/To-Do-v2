@@ -63,17 +63,19 @@ input {
     border-radius: 40px;
 }
 
-ul li {
+ul > li {
     list-style: none;
     font-size: 17px;
-    padding: 12px 42px 12px 50px;
+    padding: 12px 70px 12px 50px;
     // user-select: none;
     cursor: pointer;
     position: relative;
     overflow-wrap: break-word;
+    display: grid;
+    grid-template-columns: 360px 1fr 1fr;
 }
 
-ul li::before {
+ul li span::before {
     content: "";
     position: absolute;
     height: 28px;
@@ -86,30 +88,40 @@ ul li::before {
     left: 8px;
 }
 
-ul li.checked {
+ul li span.checked {
     color: #555;
     text-decoration: line-through;
 }
-ul li.checked::before {
+ul li span.checked::before {
     background-image: url(images/checked.png);
 }
 
 .delete-btn {
-    position: absolute;
     right: 0;
     top: 5px;
     width: 35px;
     height: 35px;
     font-size: 20px;
     color: #000000;
-    // line-height: 50px;
     text-align: center;
     border-radius: 50%;
     border: none;
-    z-index: 1;
     cursor: pointer;
 }
 
-.delete-btn:hover {
+.delete-btn:hover,
+.edit-btn:hover {
     background: #a8a9ad;
+}
+
+.edit-btn {
+    border: none;
+    right: 0;
+    top: 5px;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    color: #000000;
+    cursor: pointer;
+    border-radius: 50%;
 }
