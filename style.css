@@ -5,12 +5,17 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+  background: #000000;
+}
+
 .container {
   width: 100%;
   min-height: 100vh;
-  background-image: url(images/background_image4.jpg);
+  background-image: url(images/background_image11.jpeg);
   background-size: 100%;
   background-attachment: fixed;
+  background-repeat: no-repeat;
   padding: 10px;
 }
 
@@ -25,7 +30,7 @@
 }
 
 .todo-app h2 {
-  color: #002765;
+  color: #0a0a0a;
   display: flex;
   align-items: center;
   justify-content: center;
