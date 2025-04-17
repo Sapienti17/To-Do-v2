@@ -76,6 +76,7 @@ ul > li {
   overflow-wrap: break-word;
   display: grid;
   grid-template-columns: 360px 1fr 1fr;
+  transition: all 0.3s ease;
 }
 
 ul li span::before {

@@ -76,6 +76,21 @@ listContainer.addEventListener(
 );
 
 function saveData() {
+    // Получаем все элементы списка
+    const items = Array.from(listContainer.querySelectorAll("li"));
+
+    // Сортируем: сначала невыполненные, затем выполненные
+    items.sort((a, b) => {
+        const aChecked = a.querySelector("span").classList.contains("checked");
+        const bChecked = b.querySelector("span").classList.contains("checked");
+        return aChecked - bChecked;
+    });
+
+    // Очищаем контейнер и добавляем отсортированные элементы
+    listContainer.innerHTML = "";
+    items.forEach((item) => listContainer.appendChild(item));
+
+    // Сохраняем в localStorage
     localStorage.setItem("data", listContainer.innerHTML);
 }
 
